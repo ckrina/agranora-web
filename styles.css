@@ -1,0 +1,2 @@
+/* Custom utilities not in Tailwind Play CDN by default */
+.text-balance { text-wrap: balance; }

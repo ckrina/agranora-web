@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Agranora — Simple, open digital farm management</title>
+<meta name="description" content="Agranora helps small and medium farms move beyond paper and spreadsheets — open, modular software for traceability, compliance, and daily field work." />
+<meta property="og:title" content="Agranora — Digital tools for real field work" />
+<meta property="og:description" content="Less paperwork. More traceability. More clarity. An open platform built for the reality of farming." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          serif: ['Fraunces', 'ui-serif', 'Georgia', 'serif'],
+          sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        },
+        colors: {
+          sage: {
+            50:  'oklch(0.955 0.018 88)',
+            100: 'oklch(0.918 0.022 88)',
+            200: 'oklch(0.860 0.028 90)',
+            600: 'oklch(0.780 0.165 125)',
+            900: 'oklch(0.295 0.045 130)',
+          },
+        },
+      },
+    },
+  };
+</script>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-sage-50 text-sage-900 font-sans antialiased min-h-screen">
+
+<!-- NAV -->
+<nav class="sticky top-0 z-50 bg-sage-50/85 backdrop-blur-md border-b border-sage-200/60">
+  <div class="flex items-center justify-between px-6 md:px-8 py-5 max-w-7xl mx-auto">
+    <a href="index.html" class="text-2xl font-serif font-semibold text-sage-900 tracking-tight">Agranora</a>
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-sage-900/70">
+      <a href="#platform" class="hover:text-sage-900 transition-colors">Platform</a>
+      <a href="#features" class="hover:text-sage-900 transition-colors">Features</a>
+      <a href="#open-source" class="hover:text-sage-900 transition-colors">Open Source</a>
+      <a href="#cta" class="bg-sage-600 text-sage-900 px-5 py-2.5 rounded-full font-semibold hover:brightness-95 transition-all">Request Access</a>
+    </div>
+    <a href="#cta" class="md:hidden bg-sage-600 text-sage-900 px-4 py-2 rounded-full text-sm font-semibold">Get Started</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="relative px-6 md:px-8 pt-12 md:pt-16 pb-20 md:pb-24 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+  <div class="space-y-8">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sage-900/5 text-sage-900 text-xs font-semibold uppercase tracking-wider">
+      <span class="relative flex h-2 w-2">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sage-600 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-2 w-2 bg-sage-600"></span>
+      </span>
+      Open digital farming
+    </div>
+    <h1 class="text-5xl lg:text-7xl font-serif leading-[1.05] text-sage-900 text-balance">
+      Digital tools for <span class="italic text-sage-600">real field work.</span>
+    </h1>
+    <p class="text-lg text-sage-900/70 leading-relaxed max-w-xl">
+      Move beyond paper and spreadsheets. Agranora helps small and medium farms manage daily operations, ensure traceability, and simplify compliance — all on an open, modular platform built around the farmer.
+    </p>
+    <div class="flex flex-wrap gap-4">
+      <a href="#cta" class="px-8 py-4 bg-sage-600 text-sage-900 font-semibold rounded-full hover:brightness-95 transition-all inline-flex items-center gap-2">
+        Request Access
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+      <a href="#platform" class="px-8 py-4 border border-sage-900/20 text-sage-900 font-semibold rounded-full hover:bg-sage-900/5 transition-all">Explore the platform</a>
+    </div>
+  </div>
+  <div class="relative">
+    <img src="assets/hero-farmer.jpg" alt="Farmer using a rugged tablet in an organic vegetable field at sunset" width="1200" height="1408" class="w-full aspect-[4/5] object-cover rounded-[2rem] outline outline-1 -outline-offset-1 outline-black/5" />
+    <div class="absolute -bottom-6 -left-6 bg-sage-50 p-6 rounded-2xl shadow-xl border border-sage-200 max-w-xs">
+      <div class="flex items-center gap-4 mb-3">
+        <div class="size-10 rounded-full bg-sage-600/25 grid place-items-center text-sage-900 font-bold text-sm">98%</div>
+        <div class="text-sm font-semibold text-sage-900">Traceability score</div>
+      </div>
+      <p class="text-xs text-sage-900/60">Lot #402 — organic certification requirements met automatically.</p>
+    </div>
+  </div>
+</header>
+
+<!-- PROBLEM -->
+<section id="platform" class="bg-sage-900 py-20 md:py-24 text-white">
+  <div class="max-w-7xl mx-auto px-6 md:px-8">
+    <div class="max-w-2xl mb-14">
+      <p class="text-xs font-semibold uppercase tracking-widest text-sage-600 mb-4">The problem · the shift</p>
+      <h2 class="text-3xl md:text-5xl font-serif leading-tight text-balance">
+        Paper, Excel, and scattered apps <span class="italic text-sage-600">weren't built for the field.</span>
+      </h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="space-y-4">
+        <div class="size-12 rounded-xl bg-sage-600/15 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sage-600"><path d="M15 12h-5"/><path d="M15 8h-5"/><path d="M19 17V5a2 2 0 0 0-2-2H4"/><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"/></svg>
+        </div>
+        <h3 class="text-xl font-serif">No more paper trails</h3>
+        <p class="text-sage-50/70 leading-relaxed">Stop losing critical data in muddy notebooks and scattered spreadsheets.</p>
+      </div>
+      <div class="space-y-4">
+        <div class="size-12 rounded-xl bg-sage-600/15 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sage-600"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></svg>
+        </div>
+        <h3 class="text-xl font-serif">Full traceability</h3>
+        <p class="text-sage-50/70 leading-relaxed">Every harvest, treatment, and lot is recorded right where it happens — in the field.</p>
+      </div>
+      <div class="space-y-4">
+        <div class="size-12 rounded-xl bg-sage-600/15 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sage-600"><path d="M18.178 8c5.096 0 5.096 8 0 8-5.095 0-7.133-8-12.739-8-4.585 0-4.585 8 0 8 5.606 0 7.644-8 12.74-8z"/></svg>
+        </div>
+        <h3 class="text-xl font-serif">Open & modular</h3>
+        <p class="text-sage-50/70 leading-relaxed">Built on FarmOS-inspired foundations. You own your data and choose what to use.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="py-24 max-w-7xl mx-auto px-6 md:px-8">
+  <div class="grid lg:grid-cols-2 gap-16 items-start">
+    <div class="space-y-6 lg:sticky lg:top-28">
+      <p class="text-xs font-semibold uppercase tracking-widest text-sage-600">Benefits</p>
+      <h2 class="text-4xl md:text-5xl font-serif text-sage-900 leading-tight text-balance">
+        Less paperwork. <span class="italic text-sage-600">More clarity.</span> Real control.
+      </h2>
+      <p class="text-sage-900/70 leading-relaxed text-lg">Agranora turns the daily reality of your farm into structured, useful information — without making it more complex.</p>
+    </div>
+    <ul class="space-y-3" id="benefits-list"></ul>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="py-24 bg-sage-900 text-sage-50">
+  <div class="max-w-7xl mx-auto px-6 md:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+      <p class="text-xs font-semibold uppercase tracking-widest text-sage-600">Features</p>
+      <h2 class="text-4xl md:text-5xl font-serif text-balance">
+        Designed for the <span class="italic text-sage-600">reality of farming</span>
+      </h2>
+      <p class="text-sage-50/70">Practical tools that respect your time and your experience.</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="p-8 rounded-3xl bg-white/5 border border-white/10 space-y-4 hover:border-sage-600/40 transition-colors">
+        <div class="size-12 bg-sage-600/15 rounded-2xl grid place-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sage-600"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+        </div>
+        <h3 class="font-semibold text-lg">Mobile & offline-first</h3>
+        <p class="text-sm text-sage-50/65 leading-relaxed">Enter data deep in the field without signal. Syncs when you're back.</p>
+      </div>
+      <div class="p-8 rounded-3xl bg-white/5 border border-white/10 space-y-4 hover:border-sage-600/40 transition-colors">
+        <div class="size-12 bg-sage-600/15 rounded-2xl grid place-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sage-600"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"/><path d="m7 16.5-4.74-2.85"/><path d="m7 16.5 5-3"/><path d="M7 16.5v5.17"/><path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z"/><path d="m17 16.5-5-3"/><path d="m17 16.5 4.74-2.85"/><path d="M17 16.5v5.17"/><path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z"/><path d="M12 8 7.26 5.15"/><path d="m12 8 4.74-2.85"/><path d="M12 13.5V8"/></svg>
+        </div>
+        <h3 class="font-semibold text-lg">Lots & inventory</h3>
+        <p class="text-sm text-sage-50/65 leading-relaxed">Track seeds, inputs, and harvests across plots and seasons in real time.</p>
+      </div>
+      <div class="p-8 rounded-3xl bg-white/5 border border-white/10 space-y-4 hover:border-sage-600/40 transition-colors">
+        <div class="size-12 bg-sage-600/15 rounded-2xl grid place-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sage-600"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="m3 15 2 2 4-4"/></svg>
+        </div>
+        <h3 class="font-semibold text-lg">Easy reporting</h3>
+        <p class="text-sm text-sage-50/65 leading-relaxed">Generate organic certification and compliance reports with a single click.</p>
+      </div>
+      <div class="p-8 rounded-3xl bg-white/5 border border-white/10 space-y-4 hover:border-sage-600/40 transition-colors">
+        <div class="size-12 bg-sage-600/15 rounded-2xl grid place-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sage-600"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3 class="font-semibold text-lg">Team access</h3>
+        <p class="text-sm text-sage-50/65 leading-relaxed">Grant roles to workers, agronomists, or certifiers — no shared passwords.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OPEN SOURCE -->
+<section id="open-source" class="py-24">
+  <div class="max-w-7xl mx-auto px-6 md:px-8 flex flex-col lg:flex-row gap-16 items-center">
+    <div class="lg:w-1/2 space-y-6">
+      <p class="text-xs font-semibold uppercase tracking-widest text-sage-600">Open · Modular · Yours</p>
+      <h2 class="text-4xl md:text-5xl font-serif text-sage-900 leading-tight text-balance">
+        No vendor lock-in. <span class="italic text-sage-600">Ever.</span>
+      </h2>
+      <p class="text-sage-900/70 leading-relaxed">Agranora is built on an open-source core inspired by FarmOS. Farmers should own the data they generate and the tools they use to generate it. The platform is modular — it grows from a single greenhouse to multi-site cooperatives.</p>
+      <ul class="space-y-3 pt-2">
+        <li class="flex items-center gap-3 text-sm text-sage-900 font-medium">
+          <span class="size-8 rounded-full bg-sage-600/20 text-sage-900 grid place-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" x2="6" y1="3" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
+          </span>
+          Open-source core, no vendor lock-in
+        </li>
+        <li class="flex items-center gap-3 text-sm text-sage-900 font-medium">
+          <span class="size-8 rounded-full bg-sage-600/20 text-sage-900 grid place-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+          </span>
+          Standardized data formats — your data stays yours
+        </li>
+        <li class="flex items-center gap-3 text-sm text-sage-900 font-medium">
+          <span class="size-8 rounded-full bg-sage-600/20 text-sage-900 grid place-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h.01"/><path d="M8.5 16.429a5 5 0 0 1 7 0"/><path d="M5 12.859a10 10 0 0 1 5.17-2.69"/><path d="M19 12.859a10 10 0 0 0-2.007-1.523"/><path d="M2 8.82a15 15 0 0 1 4.177-2.643"/><path d="M22 8.82a15 15 0 0 0-11.288-3.764"/><path d="m2 2 20 20"/></svg>
+          </span>
+          Built for low-connection environments
+        </li>
+        <li class="flex items-center gap-3 text-sm text-sage-900 font-medium">
+          <span class="size-8 rounded-full bg-sage-600/20 text-sage-900 grid place-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18.178 8c5.096 0 5.096 8 0 8-5.095 0-7.133-8-12.739-8-4.585 0-4.585 8 0 8 5.606 0 7.644-8 12.74-8z"/></svg>
+          </span>
+          Modular: start small, grow without limits
+        </li>
+      </ul>
+    </div>
+    <div class="lg:w-1/2 w-full">
+      <img src="assets/farm-map.jpg" alt="Aerial view of farm lots and parcels" width="1216" height="800" loading="lazy" class="w-full aspect-video object-cover rounded-3xl outline outline-1 -outline-offset-1 outline-black/5" />
+    </div>
+  </div>
+</section>
+
+<!-- VISION -->
+<section class="py-24 bg-sage-100/60 border-y border-sage-200/60">
+  <div class="max-w-4xl mx-auto px-6 md:px-8 text-center space-y-6">
+    <p class="text-xs font-semibold uppercase tracking-widest text-sage-600">Our vision</p>
+    <h2 class="text-3xl md:text-5xl font-serif text-sage-900 leading-tight text-balance">
+      A platform built around <span class="italic text-sage-600">the people who feed us.</span>
+    </h2>
+    <p class="text-lg text-sage-900/70 leading-relaxed">We believe sustainable agriculture deserves software that is honest, open, and useful. Agranora is shaped by what happens between the rows of crops — not by what looks good in an office.</p>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="cta" class="py-24 px-6 md:px-8">
+  <div class="max-w-5xl mx-auto bg-sage-900 rounded-[2.5rem] p-12 lg:p-20 text-center text-sage-50 relative overflow-hidden">
+    <div class="relative z-10 space-y-8">
+      <h2 class="text-4xl lg:text-6xl font-serif leading-tight text-balance">
+        Digitize your farm — <span class="italic text-sage-600">without making it more complex.</span>
+      </h2>
+      <p class="text-sage-50/80 text-lg max-w-xl mx-auto">Join a growing community of farms going digital for the right reasons. Simple, open, and built for you.</p>
+      <form id="cta-form" class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+        <input type="email" required placeholder="your@farm.com" class="flex-1 px-5 py-4 rounded-full bg-sage-50 text-sage-900 placeholder:text-sage-900/40 focus:outline-none focus:ring-2 focus:ring-sage-600" />
+        <button type="submit" class="px-8 py-4 bg-sage-600 text-sage-900 font-semibold rounded-full hover:brightness-95 transition-all">Request access</button>
+      </form>
+      <p class="text-xs text-sage-50/60">Early access for small and medium farms. No spam — just product updates.</p>
+    </div>
+    <div class="absolute top-0 right-0 w-64 h-64 bg-sage-600/15 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-sage-600/10 rounded-full -ml-48 -mb-48 blur-3xl"></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-12 px-6 md:px-8 border-t border-sage-200/60">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+    <div class="text-xl font-serif font-semibold text-sage-900">Agranora</div>
+    <div class="flex flex-wrap justify-center gap-6 text-sm text-sage-900/60">
+      <a href="#" class="hover:text-sage-900">Privacy</a>
+      <a href="#" class="hover:text-sage-900">Terms</a>
+      <a href="#" class="hover:text-sage-900">Documentation</a>
+      <a href="#" class="hover:text-sage-900">GitHub</a>
+    </div>
+    <div class="text-sm text-sage-900/60">© 2026 Agranora · Rooted in open source</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
